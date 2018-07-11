@@ -1,0 +1,65 @@
+html{
+  margin:0;
+  padding:0;
+}
+body{
+    background-image: url("images/background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Playfair Display SC', serif;
+}
+.active{
+  color: #FFEAB1;
+}
+
+.nav-bar{
+  margin: 0 10%;
+}
+.nav-bar li{
+  display: inline;
+  margin: 5% 5%;
+  list-style: none;
+  color:	#E3BB77;
+  font-size: 2.5vw;
+  position: relative;
+  text-align: center;
+}
+
+
+.nav-bar li:hover{
+  color:#FFEAB1;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 600px 600px 600px 600px;
+  margin-left: 40%;
+  margin-top: 5%;
+  overflow: scroll;
+  height: 600px
+}
+
+.container div{
+  background-color: #E3BB77;
+  margin-bottom: 10%;
+  background-image: url('images/papersheet2.jpeg');
+  background-repeat: no-repeat;
+
+}
+
+#sectionOne-header {
+    color: black;
+    text-shadow: 2px 2px white;
+    margin:0% 20%;
+    padding-top: 5%;
+}
+
+#reasons li{
+  /* margin:5% 5%; */
+  padding-top: 0;
+  margin-bottom: 3%;
+  padding-top: 2.5%;
+  font-size:30px;
+}
