@@ -9,12 +9,39 @@ body{
     background-size: 100% 100%;
     font-family: 'Playfair Display SC', serif;
 }
+
+p{
+  line-height: 1.7;
+  margin-top:12.5%;
+  font-size: 22px;
+}
+
+label{
+  font-size: 20px;
+}
+
+input{
+    outline:none;
+    background-color: transparent;
+    height: 20px;
+    width: 25%;
+    border: 0px solid;
+    font-size: 20px;
+    padding-top:4%;
+}
+
+#companyName{
+  color:#FFEAB1;
+  display: block;
+  margin: 0 30%;
+  margin-bottom: 1%;
+}
 .active{
   color: #FFEAB1;
 }
 
 .nav-bar{
-  margin: 0 10%;
+  margin: 1% 10%;
 }
 .nav-bar li{
   display: inline;
@@ -62,4 +89,17 @@ body{
   margin-bottom: 3%;
   padding-top: 2.5%;
   font-size:30px;
+}
+
+#email{
+  width:40%;
+}
+
+h1{
+
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
