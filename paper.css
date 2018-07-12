@@ -30,12 +30,6 @@ input{
     padding-top:4%;
 }
 
-#companyName{
-  color:#FFEAB1;
-  display: block;
-  margin: 0 30%;
-  margin-bottom: 1%;
-}
 .active{
   color: #FFEAB1;
 }
@@ -60,20 +54,23 @@ input{
 
 .container{
   display: grid;
-  grid-template-columns: 80%;
+  grid-template-columns: 90%;
   grid-template-rows: 600px 600px 600px 600px;
   margin-left: 40%;
   margin-top: 5%;
   overflow: scroll;
-  height: 600px
+  height: 600px;
+  width: 700px;
+  border: 1px solid #FFEAB1;
 }
 
 .container div{
   background-color: #E3BB77;
   margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 0%;
   background-image: url('images/papersheet2.jpeg');
   background-repeat: no-repeat;
-
 }
 
 #sectionOne-header {
@@ -85,7 +82,6 @@ input{
 
 #reasons li{
   /* margin:5% 5%; */
-  padding-top: 0;
   margin-bottom: 3%;
   padding-top: 2.5%;
   font-size:30px;
@@ -95,11 +91,17 @@ input{
   width:40%;
 }
 
-h1{
-
+.write{
+  overflow: hidden;
+  margin: 0 auto;
+  animation: typewriter 4s steps(44) 1s 1 normal both;
 }
 
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }

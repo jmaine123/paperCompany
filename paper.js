@@ -3,14 +3,16 @@ alert('JavaScript is working')
 function autoScroll(){
   var x = event.target.classList[0]
   console.log(x)
-  var element = document.getElementsByClassName(x);
-  console.log(element);
-  element[1].scrollIntoView({behavior:"smooth"});
+  var elements = document.getElementsByClassName(x);
+  var div = document.getElementsByClassName('container')[0];
+  var topPos = elements[1].offsetTop;
+  console.log(elements[1].offsetTop);
+  div.scrollTo(0,topPos-100);
 
   var currentActive = document.getElementsByClassName('active')
-  currentActive.classList.remove('active')
+  currentActive[0].classList.remove('active')
 
-  element[0].classList.add('active')
+  elements[0].classList.add('active')
 }
 
 
