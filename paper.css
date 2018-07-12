@@ -1,6 +1,7 @@
 html{
   margin:0;
   padding:0;
+  height:1000px;
 }
 body{
     background-image: url("images/background.jpeg");
@@ -11,9 +12,9 @@ body{
 }
 
 p{
-  line-height: 1.7;
-  margin-top:12.5%;
-  font-size: 22px;
+  line-height: 1.5;
+  margin-top:8%;
+  font-size: 25px;
 }
 
 label{
@@ -27,7 +28,7 @@ input{
     width: 25%;
     border: 0px solid;
     font-size: 20px;
-    padding-top:4%;
+    padding-top:3%;
 }
 
 .active{
@@ -43,32 +44,31 @@ input{
   list-style: none;
   color:	#E3BB77;
   font-size: 2.5vw;
-  position: relative;
   text-align: center;
 }
 
 
 .nav-bar li:hover{
   color:#FFEAB1;
+  overflow: hidden;
+
 }
 
 .container{
   display: grid;
-  grid-template-columns: 90%;
-  grid-template-rows: 600px 600px 600px 600px;
+  grid-template-columns: 100%;
+  grid-template-rows: 700px 700px 700px 700px;
   margin-left: 40%;
   margin-top: 5%;
   overflow: scroll;
   height: 600px;
-  width: 700px;
+  /* width: 700px; */
   border: 1px solid #FFEAB1;
 }
 
 .container div{
   background-color: #E3BB77;
   margin-bottom: 10%;
-  margin-left: 10%;
-  margin-right: 0%;
   background-image: url('images/papersheet2.jpeg');
   background-repeat: no-repeat;
 }
@@ -77,13 +77,13 @@ input{
     color: black;
     text-shadow: 2px 2px white;
     margin:0% 20%;
-    padding-top: 5%;
+    padding-top: 4%;
 }
 
 #reasons li{
   /* margin:5% 5%; */
-  margin-bottom: 3%;
-  padding-top: 2.5%;
+  margin-top: 4%;
+  margin-bottom: 4%;
   font-size:30px;
 }
 
@@ -91,17 +91,55 @@ input{
   width:40%;
 }
 
-.write{
-  overflow: hidden;
-  margin: 0 auto;
-  animation: typewriter 4s steps(44) 1s 1 normal both;
-}
-
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
+.container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: #E3BB77;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background:#9b7c63;
+}
+
+.nav-bar li a{
+  overflow: hidden;
+  white-space: nowrap;
+  /* letter-spacing: .1em; */
+  animation: typing 7s steps(1);
+}
+
+h1{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 6s steps(20);
+  animation-iteration-count: infinite;
+}
+
+#submit{
+  height: 15%;
+  width: 15%;
+  font-size: 20px;
+  background-color: #E3BB77;
+  color: white;
+}
+
+#submit:hover{
+  background-color: white;
+  color:#9b7c63;
+}
+
+h1:nth-child(1){
+  margin-top: 4%;
+}
+
+#contactList li{
+  font-size: 30px;
+  margin-bottom: 4.5%;
 }

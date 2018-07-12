@@ -4,46 +4,64 @@
 <head>
   <meta charset="utf-8">
   <title>Paper Company</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
   <link rel="stylesheet" href="paper.css">
 </head>
 
 <body>
-      <ol class="nav-bar">
+      <ol class="nav-bar animated fadeInDown">
         <li><a class="home active" onclick="autoScroll()">Home</a></li>
         <li><a class="about" onclick="autoScroll()">About Us</a></li>
         <li><a class="signUp" onclick="autoScroll()">Sign Up</a></li>
-        <li><a class="order" onclick="autoScroll()">Order</a></li>
+        <li><a class="contact" onclick="autoScroll()">Contact Us</a></li>
       </ol>
-    <div class="container">
+    <div class="container animated fadeInDown">
       <div class="home">
         <h1 id ="sectionOne-header">Munder Difflin Paper</h1>
         <ol id="reasons">
-          <li>Fast Deliver!</li>
+          <li>Fast Delivery!</li>
           <li>Afforadable Prices</li>
           <li>Multiple Uses</li>
           <li>100 % MONEY BACK GUARANTEE</li>
+          <li>Environmentally Friendly</li>
+          <li>Top Paper in the Nation</li>
         </ol>
       </div>
       <div class="about">
         <h1>About Us</h1>
-        <p>We were established in 1990. We provide a innovative way to look at paper. Whether you need you to make a copy or need to make Oragomi, our paper is for you! Our top of the line paper allows for the most aerodynamic paper planes.</p>
+        <p>We were established in 1990. We provide a innovative way to look at paper. Whether you need you to make a copy or need to make Oragomi, our paper is for you! Our top of the line paper allows for the most aerodynamic paper planes.We have provided top of the line service to every state in country as well as some international locations.</p>
       </div>
       <div class="signUp">
-        <h1>Sign Up</h1>
+        <h1>Sign Up for NewsLetter</h1>
         <form>
           <label>First Name: </label>
-          <input type="text" name="" value="">
+          <input type="text" id="firstName">
+          <br>
+          <br>
           <label>Last Name: </label>
-          <input type="text" name="" value="">
+          <input type="text" id="lastName">
           <br>
           <br>
           <label>Email:</label>
           <input type="Email" id="email">
+          <br>
+          <br>
+          <label>Company Name:</label>
+          <input type="text" id="companyName">
+          <br>
+          <br>
+          <h5></h5>
+          <button type="button" id="submit">Submit</button>
         </form>
       </div>
-      <div class="order">
-        <h1>Order</h1>
+      <div class="contact">
+        <h1>Contact Us</h1>
+        <ul id="contactList">
+          <li>info@getthatpaper.com</li>
+          <li>Phone:724-741-9700</li>
+          <li>Fax:724-741-9901</li>
+        </ul>
       </div>
     </div>
 </body>
